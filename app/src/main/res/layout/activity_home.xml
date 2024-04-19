@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/my_black">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:background="@drawable/home_bg"/>
+    <LinearLayout
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/HprofileBtn">
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/details_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linechart"
+        android:layout_above="@+id/HbottomNav"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/bloodPressure_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Pressure"
+                        android:textColor="@color/yellow_2"
+                        android:textSize="20sp"
+                        android:paddingVertical="20dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/blood_pr"
+                        android:drawableTint="@color/yellow_2"
+                        android:drawablePadding="16dp"
+                        android:layout_marginHorizontal="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SYS: 111 mmHg"
+                            android:textSize="14sp"
+                            android:textColor="@color/yellow_2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DIA: 66 mmHg"
+                            android:textSize="14sp"
+                            android:textColor="@color/yellow_2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/heartRate_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:layout_below="@+id/bloodPressure_card"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heart Rate"
+                        android:textColor="@color/yellow_2"
+                        android:textSize="20sp"
+                        android:paddingVertical="20dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/heart_rate"
+                        android:drawableTint="@color/yellow_2"
+                        android:drawablePadding="16dp"
+                        android:layout_marginHorizontal="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="85 bpm"
+                            android:textSize="16sp"
+                            android:textColor="@color/yellow_2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:layout_below="@+id/heartRate_card"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our Report"
+                        android:textColor="@color/yellow_2"
+                        android:textSize="20sp"
+                        android:paddingVertical="20dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/report"
+                        android:drawableTint="@color/yellow_2"
+                        android:drawablePadding="16dp"
+                        android:layout_marginHorizontal="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GOOD"
+                            android:textSize="16sp"
+                            android:textColor="@color/yellow_2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/HprofileBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_launcher_foreground"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:importantForAccessibility="yes"/>
+    <LinearLayout
+        android:id="@+id/HbottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nav_bar_bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+            <LinearLayout
+                android:id="@+id/Hhome_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/home_icon"
+                    android:backgroundTint="@color/yellow_2"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Heeg_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/chart_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Hchatbot_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/chat_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Hircam_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/camera_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Hreport_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/report_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

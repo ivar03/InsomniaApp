@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IRCamActivity"
+    android:background="@color/my_black">
+
+
+    <ImageButton
+        android:id="@+id/IprofileBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_launcher_foreground"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:importantForAccessibility="yes"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nav_bar_bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+            <LinearLayout
+                android:id="@+id/Ihome_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/home_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Ieeg_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/chart_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Ichatbot_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/chat_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Iircam_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/camera_icon"
+                    android:backgroundTint="@color/yellow_2"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Ireport_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/report_icon"
+                    android:backgroundTint="@color/my_black"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

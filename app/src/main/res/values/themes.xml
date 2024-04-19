@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InsomniaApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_black</item>
+        <item name="android:statusBarColor">@color/my_black</item>
+        <item name="android:navigationBarColor">@color/my_black</item>
+    </style>
+
+    <style name="Theme.InsomniaApp" parent="Base.Theme.InsomniaApp" />
+</resources>

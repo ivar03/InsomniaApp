@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "285246942897",
+    "project_id": "gdsc-insomnia",
+    "storage_bucket": "gdsc-insomnia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285246942897:android:e997f9bb78fcb0e41bfc90",
+        "android_client_info": {
+          "package_name": "com.ivar7284.gdsc_insomnia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlMt2uYMVcMLxdkgBWcl8ufGLTKQoYzDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/my_black">
+
+    <LinearLayout
+        android:id="@+id/PBackBtn"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/backBtn_ib"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_icon"
+            android:backgroundTint="@color/yellow_2"
+            />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PBackBtn">
+
+        <LinearLayout
+            android:id="@+id/userdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/account_icon"
+                android:backgroundTint="@color/yellow_3"
+                android:elevation="10dp"
+                app:civ_border_color="@color/yellow_2"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/Pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="70dp"
+                android:text="Name: "
+                android:textColor="@color/yellow_2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Pphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:text="Phone: "
+                android:textColor="@color/yellow_2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Pemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:text="Email: "
+                android:textColor="@color/yellow_2"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/userdetails"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/yellow_2"
+            android:gravity="center"
+            android:text="LOGOUT"
+            android:textColor="@color/my_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userdetails"
+            tools:layout_editor_absoluteX="40dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
